@@ -1,0 +1,15 @@
+{
+  "name": "wn-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wn-app/src",
+  "projectType": "application",
+  "tags": [],
+  "serve": {
+    "executor": "@nrwl/node:execute",
+    "options": {
+      "buildTarget": "wn-app:build",
+      "hmr": true,
+      "port": 3001
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "wn-cms",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wn-cms/src",
+  "projectType": "application",
+  "tags": [],
+  "serve": {
+    "executor": "@nrwl/webpack:dev-server",
+    "defaultConfiguration": "development",
+    "options": {
+      "buildTarget": "wn-cms:build",
+      "hmr": true,
+      "port": 3002
+    },
+    "configurations": {
+      "development": {
+        "buildTarget": "wn-cms:build:development"
+      },
+      "production": {
+        "buildTarget": "wn-cms:build:production",
+        "hmr": false
+      }
+    }
+  }
+}
